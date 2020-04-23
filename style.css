@@ -1,0 +1,232 @@
+body 
+{
+  background-color: #e8e8e8;
+}
+
+p
+{
+  color:#3d3d3d;
+}
+
+section
+{
+  padding: 10px 5px;
+  margin: 15px 0;
+}
+
+
+h1
+{
+  font-size: 60px;
+  color: #c92a0a;
+}
+
+h2
+{
+  font-size: 35px;
+  margin: 0 0 15px 0;
+}
+
+h1, h2, h3
+{
+  font-family: Amatic SC;
+}
+
+hr
+{
+   height: 1px;
+   background-color: grey;
+   border: none;
+}
+
+
+
+/*---------------------HEADER--------------------------*/
+
+header
+{
+  background-color: #f7b125;
+  flex-direction: colomn;
+  padding: 5px 5px;
+}
+
+header h1
+{
+  text-align: center;
+}
+
+header ul
+{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  font-family: Amatic SC;
+  font-size: 50px;
+  padding: 0;
+  }
+
+a
+{
+  text-decoration: none;
+  color: #ff6200;
+  font-weight: bold;
+}
+
+/*---------------------PERFORMANCES--------------------------*/
+
+#part1
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+#part1 #contenu1
+{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#contenu1 h3
+{
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+#laughtitre
+{
+  margin-top: 0
+}
+
+/*---------------------ABOUT---------------------------*/
+
+#apropos
+{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#video
+{
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 20px 0;
+  width: 1024px;
+  height: 700px;
+  border: none;
+}
+
+/*---------------------PRICES---------------------------*/
+
+#prices
+{
+  display: flex;
+  flex-direction: column;
+}
+
+
+table
+{
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+th
+{
+  border: 1px solid black;
+   padding: 20px;
+}
+
+td
+{
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.noborders
+{
+  border: none;
+}
+
+/*-----------------------CONTACT-------------------------------*/
+
+#contenuform
+{
+  display: flex;
+  flex-direction: column; 
+}
+
+#firstname, #lastname, #email
+{
+  width: auto;
+  background-color: #bfe4ff;
+}
+
+#form-message
+{
+ width:auto;
+ height:500px;
+ background-color: #bfe4ff; 
+}
+
+#submit
+{
+  margin:10px auto;
+  width: 70px;
+  text-align: center;
+  
+}
+/*-----------------------FOOTER-------------------------------*/
+
+footer
+{
+  background-color: #807f7e;
+  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+}
+
+#foot
+{
+  color: black;
+}
+
+footer a
+{
+  color: black;
+}
+
+
+
+/*-----------------------MEDIA QUERIES-------------------------------*/
+
+
+@media all and (max-width: 1024px)
+{
+  #video
+  {
+    width: 90%;
+    height: 450px;
+  }
+  
+  #cirque
+  {
+    display: none;
+  }
+  
+  header ul
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
